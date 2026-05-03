@@ -108,19 +108,23 @@
     }
     .hero-text { animation: fadeIn 1.2s ease 0.4s both; }
     .hero h1 {
-      font-family: 'Italiana', serif; font-weight: 400;
-      font-size: clamp(64px, 8vw, 140px);
-      line-height: 0.95; color: var(--crimson);
-      margin-bottom: 36px; letter-spacing: -0.005em;
+      font-family: 'Pinyon Script', cursive;
+      font-weight: 400;
+      font-size: clamp(72px, 9vw, 150px);
+      line-height: 0.95;
+      color: var(--crimson);
+      margin-bottom: 36px;
+      letter-spacing: -0.005em;
     }
     .hero h1 .lastname {
-      display: block; font-family: 'Pinyon Script', cursive;
-      font-size: 0.85em; margin-top: 0.05em;
-      padding-left: 0.1em; line-height: 0.9;
+      display: block;
+      margin-top: 0.05em;
+      padding-left: 0.18em;
+      line-height: 0.9;
     }
     .role {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 17px; letter-spacing: 0.32em;
+      font-size: 16px; letter-spacing: 0.28em;
       text-transform: uppercase; color: var(--crimson);
       margin-bottom: 56px;
     }
@@ -433,7 +437,7 @@
 <header>
   <div class="nav-inner">
     <a href="home.html" class="nav-brand" aria-label="Charlotte Thunen home">
-      <img src="CT.svg" alt="CT logo" class="logo-img" />
+      <img src="logo/CT.svg" alt="CT logo" class="logo-img" onerror="this.onerror=null; this.src='logo/CT.png'" />
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -452,12 +456,12 @@
 
 <section class="hero">
   <div class="hero-monogram" aria-hidden="true">
-    <img src="CT.svg" alt="" />
+    <img src="logo/CT.svg" alt="" onerror="this.onerror=null; this.src='logo/CT.png'" />
   </div>
 
   <div class="hero-image-wrap">
     <div class="hero-image">
-      <img src="photos/charlotte_thunen.jpg" alt="Charlotte Thunen" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;hero-image-placeholder&quot;>CT</div>'" />
+      <img src="photos/char_grad.jpg" alt="Charlotte Thunen" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;hero-image-placeholder&quot;>CT</div>'" />
     </div>
   </div>
 
@@ -466,7 +470,7 @@
       Charlotte
       <span class="lastname">Thunen</span>
     </h1>
-    <div class="role">Data Analyst &nbsp;·&nbsp; Brand Strategist</div>
+    <div class="role">Consultant &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; Brand Strategist</div>
     <a href="#contact" class="cta">
       <span>Work with me</span>
       <span class="cta-arrow">→</span>
